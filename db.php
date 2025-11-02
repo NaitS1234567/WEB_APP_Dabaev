@@ -6,7 +6,7 @@ if (!isset($_COOKIE['user_id'])) {
     exit();
 }
 
-$link = mysqli_connect('db', 'root', 'Test123', 'web_app_db');
+$link = mysqli_connect('db', 'root', 'eve@123', 'web_app_db');
 $username = $_COOKIE['username'];
 
 $welcome_message = "Привет, " . $username;

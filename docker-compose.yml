@@ -11,7 +11,7 @@ services:
             - DATABASE_PORT=3306
             - DATABASE_NAME=web_app_db
             - DATABASE_USER=root
-            - DATABASE_PASSWORD=Test123
+            - DATABASE_PASSWORD=eve@123
         depends_on:
             - db
         networks:
@@ -22,8 +22,8 @@ services:
         environment:
             MYSQL_DATABASE: web_app_db
             MYSQL_USER: user
-            MYSQL_PASSWORD: Test123
-            MYSQL_ROOT_PASSWORD: Test123
+            MYSQL_PASSWORD: eve@123
+            MYSQL_ROOT_PASSWORD: eve@123
         volumes:
             - db_data:/var/lib/mysql
             - ./db.php:/docker-entrypoint-initdb.d/init.sql
